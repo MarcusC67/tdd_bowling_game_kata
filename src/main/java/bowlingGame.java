@@ -1,9 +1,13 @@
 public class bowlingGame {
 
-    int rollLessThan10(int numPinsDown) {
+    public static int score() {
+        return 0;
+    }
+
+    static int roll(int numPinsDown) {
 
         if (numPinsDown != 0) {
-            System.out.println("numPinsDown = " + numPinsDown);
+            // System.out.println("numPinsDown = " + numPinsDown);
             return numPinsDown;
         } else {
             return 0;
