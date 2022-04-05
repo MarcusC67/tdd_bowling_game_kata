@@ -1,10 +1,13 @@
 public class bowlingGame {
 
-    public static int score() {
-        return 0;
-    }
+    int playerScore = 0;
+    int numPinsDown = 0;
 
-    static int roll(int numPinsDown) {
+    public int roll(int numPinsDown) {
+
+        this.numPinsDown = numPinsDown;
+
+        playerScore += numPinsDown;
 
         if (numPinsDown != 0) {
             // System.out.println("numPinsDown = " + numPinsDown);
@@ -12,5 +15,10 @@ public class bowlingGame {
         } else {
             return 0;
         }
+    }
+
+    public int score() {
+        // System.out.println("playerScore = " + playerScore);
+        return playerScore;
     }
 }
