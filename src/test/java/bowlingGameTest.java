@@ -32,4 +32,18 @@ public class bowlingGameTest {
         assertEquals(20, game.score());
     }
 
+
+    // Check spare with bonus 3rd roll = 5, across 2 frames
+    @Test
+    public void checkSpareWithNextRollOfFiveInTwoFramesTotal20() {
+        bowlingGame game = new bowlingGame();
+        game.roll(4);
+        game.roll(6);
+        game.roll(5);
+        for (int i = 0; i < 17; i++) {
+            game.roll(0);
+        }
+        assertEquals(20, game.score());
+    }
+
 }
