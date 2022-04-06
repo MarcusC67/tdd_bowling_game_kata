@@ -1,31 +1,63 @@
-<h3>TDD Bowling Game Kata</h3>
-This description is based on that at Adventures in C#: The Bowling Game
+💻 Test-Driven Development - Bowling Game Kata 💻
 
-**Problem Description**<p>
-Create a program, which, given a valid sequence of rolls for one line of American Ten-Pin Bowling, produces the total score for the game. Here are some things that the program will not do:
+---------------------------------------------------------------------------------------------------------
 
-We will not check for valid rolls.
-We will not check for correct number of rolls and frames.
-We will not provide scores for intermediate frames.
-Depending on the application, this might or might not be a valid way to define a complete story, but we do it here for purposes of keeping the kata light. I think you’ll see that improvements like those above would go in readily if they were needed for real.
+🤔 What is a kata?
 
-We can briefly summarize the scoring for this form of bowling:
+🥋A Kata in martial arts means “a system of individual training exercises”. Just like in martial arts, coding also requires consistent practise to hone in the skill. As you move through the interview stages of the programme, you will most likely be sent tech tasks and/or coding “Katas" to complete for your take-home/live interviews. Test-Driven Development (TDD) is a sought after skill as an engineer in the tech industry, as it can help you write testable and clean code through a test-first approach. We call this ‘test-driving’ a program.
 
-Each game, or “line” of bowling, includes ten turns, or “frames” for the bowler.
-In each frame, the bowler gets up to two tries to knock down all the pins.
-If in two tries, he fails to knock them all down, his score for that frame is the total number of pins knocked down in his two tries.
-If in two tries he knocks them all down, this is called a “spare” and his score for the frame is ten plus the number of pins knocked down on his next throw (in his next turn).
-If on his first try in the frame he knocks down all the pins, this is called a “strike”. His turn is over, and his score for the frame is ten plus the simple total of the pins knocked down in his next two rolls.
-If he gets a spare or strike in the last (tenth) frame, the bowler gets to throw one or two more bonus balls, respectively. These bonus throws are taken as part of the same turn. If the bonus throws knock down all the pins, the process does not repeat: the bonus throws are only used to calculate the score of the final frame.
-The game score is the total of all frame scores.
-More info on the rules at: How to Score for Bowling
+---------------------------------------------------------------------------------------------------------
 
-Clues
-What makes this game interesting to score is the lookahead in the scoring for strike and spare. At the time we throw a strike or spare, we cannot calculate the frame score: we have to wait one or two frames to find out what the bonus is.
+What do I have to do?
 
-Suggested Test Cases
-(When scoring “X” indicates a strike, “/” indicates a spare, “-” indicates a miss)
+💻 We would like you to plan out and spend 30-45 minutes having a go at the Bowling Game Kata using Test-Driven Development. We don't expect you to have finished the solution for the seminar but that you have had a good go at using Test-Driven Development.
 
-X X X X X X X X X X X X (12 rolls: 12 strikes) = 10 frames * 30 points = 300
-9- 9- 9- 9- 9- 9- 9- 9- 9- 9- (20 rolls: 10 pairs of 9 and miss) = 10 frames * 9 points = 90
-5/ 5/ 5/ 5/ 5/ 5/ 5/ 5/ 5/ 5/5 (21 rolls: 10 pairs of 5 and spare, with a final 5) = 10 frames * 15 points = 150
+⚙️  Before you start on this Kata make sure...⚙️
+
+✅  You watch the Test-Driven Development session if you didn't attend it
+
+✅  You use the programming language recommended for your programme. If you are unsure, please reach out to one of the Tech Coaches.
+
+✅  You have chosen a unit testing framework of your choice.
+
+✅  You have a project ready to go in your chosen Code Editor or IDE set up with a failing unit test.
+
+---------------------------------------------------------------------------------------------------------
+
+🗒️ Instructions
+
+👉 Read the Bowling Game Kata requirements. You can find it in the following link: https://codingdojo.org/kata/Bowling/
+
+👉 Please note that the kata ‘clues’ section refers to some C# testing frameworks like XUnit, please ignore these.
+
+👉 Solve the Bowling Game Kata in the programming language for the programme you are attending, if you are unsure, please reach out to a tech coach.
+
+👉 Please set aside up to 10 minutes to make a start on this Kata, don’t worry if you don’t reach a full solution as this Kata is designed for you to practise test-driven development and understand the process. We don't expect you to have finished the solution for the seminar but that you have had a good go at using Test-Driven Development.
+
+---------------------------------------------------------------------------------------------------------
+
+💡Tips & Tricks on how to get started
+
+Set up your Code Editor / IDE beforehand so you’re ready to write the unit tests and code.
+
+Before you write your code, make sure you understand the problem statement. The Kata may seem large at first, so break it down into smaller, manageable pieces.
+
+Please note down your test cases, inputs and outputs on a notepad like Word / Notepad++ / piece of paper to validate your understanding.
+
+Use the Triple A Structure - Arrange, Act, Assert to guide you when writing your unit tests
+
+Use the RED - GREEN - REFACTOR cycle: Write one failing test first and write the simplest code to make that test pass, then see if there is any opportunity to refactor. If not, move onto writing your next test and follow the cycle through as you build up your solution.
+
+Remember to consider a range of different test cases and edge cases.
+
+---------------------------------------------------------------------------------------------------------
+
+💡Apply PseudoCode to help you think through your logic
+
+Pseudocode is a description of the steps for an algorithm and can be used to help you think through your logic.
+
+In this video at the 02:20 timestamp, you can see Pseudocode in action on a Codewars challenge: https://storage.googleapis.com/tech-returners-course/Pre-Journey/solving_problems_on_codewars.mp4
+
+In the video, observe how Harriet reads through the solution out loud and notice how she pseudo codes what she needs to do before writing any code.
+
+---------------------------------------------------------------------------------------------------------
